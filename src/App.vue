@@ -37,7 +37,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main></v-main>
       <HelloWorld/>
     </v-main>
   </v-app>
