@@ -11,9 +11,15 @@
 
       >
       </v-img>
-    
+      <h1
+        class="text-center"  
+      >به ارکید فارمد خوش آمدید</h1>
+      <p class="welcomeText text-center">لطفا اطلاعات فرم زیر را با دقت تکمیل نمایید</p>
     </v-col>
   </v-container>
+  <v-form>
+    
+  </v-form>
 
   </v-app>
 </template>
@@ -36,5 +42,15 @@ export default {
   @import './assets/style/fontface.css';
   .topImg * {
     padding: 0;
+  }
+  h1 {
+    color: #004b70;
+    font-size: 25px;
+    line-height: 1;
+  }
+  .welcomeText {
+    color: #a0a0a0;
+    font-size: 15px;
+    margin-bottom: 40px;
   }
 </style>
