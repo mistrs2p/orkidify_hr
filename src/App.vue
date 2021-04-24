@@ -1,5 +1,20 @@
 <template>
   <v-app>
+  <v-container
+    fluid
+    class="topImg"
+  >
+    <v-col>
+      <v-img
+        min-height="416"
+        src="./assets/Img/Header_small.png"
+
+      >
+      </v-img>
+    
+    </v-col>
+  </v-container>
+
   </v-app>
 </template>
 
@@ -19,12 +34,7 @@ export default {
 
 <style>
   @import './assets/style/fontface.css';
-
-  body {
-    position: relative;
-    margin: 5px 0px 0px 0px;
-    min-height: 416px;
-    background: url(./assets/Img/Header_small.png) top center no-repeat white;
-    padding-top: 250px;
-}
+  .topImg * {
+    padding: 0;
+  }
 </style>
