@@ -19,6 +19,11 @@
         </v-col>
       </v-row>
       <v-form>
+        <v-row class="addPhoto">
+          <h2>ثبت تصویر</h2>
+          <canvas id="canvas"></canvas>
+
+        </v-row>
             
       </v-form>
     </v-container>
@@ -44,15 +49,38 @@ export default {
   @import './assets/style/fontface.css';
   .topImg * {
     padding: 0;
+    margin: 0
   }
   h1 {
     color: #004b70;
     font-size: 25px;
     line-height: 1;
   }
+  h2 {
+    color: #c1ced9;
+    margin: 0px 15px;
+  }
   .welcomeText {
     color: #a0a0a0;
     font-size: 15px;
     margin-bottom: 40px;
+  }
+  .row {
+    background: linear-gradient(180deg, #f1f5f8 0%, #ffffff 100%);
+    overflow: hidden;
+  }
+
+  #canvas {
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 10px 10px;
+    border: solid 3px white;
+    margin: 50px auto;
+    display: block;
+    background: white url(./assets/Img/Photo_Icon.png) center center no-repeat;
+    cursor: pointer;
+  }
+
+  .addPhoto {
+    flex-direction: column
   }
 </style>
