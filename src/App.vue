@@ -388,7 +388,65 @@
           </v-col>
         </v-row>
 
+        <h2>Computer Skills</h2>
+        
+        <v-row>
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Word"
+            />
+          </v-col>
 
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Outlook"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Excel"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Medical Search"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Power Point"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="Fast Typing"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field
+              label="آیا با مهارت کامپیوتری دیگری آشنایی دارید؟"
+            />
+          </v-col>
+        </v-row>
             
       </v-form>
     </v-container>
