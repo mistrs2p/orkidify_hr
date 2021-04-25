@@ -20,8 +20,45 @@
       </v-row>
       <v-form>
         <v-row class="addPhoto">
-          <h2>ثبت تصویر</h2>
+          <div>
+            <h2>ثبت تصویر</h2>
+          </div>
           <canvas id="canvas"></canvas>
+
+        </v-row>
+
+          <h2>نام شما</h2>
+        <v-row>
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="نام (اجباری)"
+            />
+          </v-col>
+
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="Name (اجباری)"
+            />
+          </v-col>
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="نام خانوادگی (اجباری)"
+            />
+          </v-col>
+
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="family (اجباری)"
+            />
+          </v-col>
 
         </v-row>
             
@@ -81,6 +118,5 @@ export default {
   }
 
   .addPhoto {
-    flex-direction: column
   }
 </style>
