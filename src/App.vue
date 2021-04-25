@@ -212,6 +212,49 @@
             />
           </v-col>
         </v-row>
+
+        <h2>اطلاعات تماس</h2>
+        <v-row>
+           <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="تلفن (اجباری)"
+            />
+          </v-col>
+          
+           <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="موبایل"
+            />
+          </v-col>
+
+           <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="ایمیل (اجباری)"
+            />
+          </v-col>
+
+           <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="شهر (اجباری)"
+            />
+          </v-col>
+
+           <v-col
+            cols="12"
+          >
+            <v-text-field
+              label="آدرس (اجباری)"
+            />
+          </v-col>
+        </v-row>
             
       </v-form>
     </v-container>
