@@ -476,7 +476,82 @@
           </v-col>
         </v-row>
 
-            
+
+        <h2>زبان های خارجی</h2>
+        <v-row>
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="IELTS"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="TOEFL"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="GRE"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="English Intermediate"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="English Beginner"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="French Advanced"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="French Intermediate"
+            />
+          </v-col>
+
+          <v-col
+            cols="4"
+          >
+            <v-checkbox
+              label="French Beginner"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field
+              label="آیا با زبان خارجی دیگری آشنایی دارید؟"
+            />
+          </v-col>
+        </v-row>
+
       </v-form>
     </v-container>
 
