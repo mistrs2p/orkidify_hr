@@ -447,6 +447,35 @@
             />
           </v-col>
         </v-row>
+
+        <h2>آشنایی با لهجه های محلی</h2>
+
+        <v-row>
+          <v-col
+            cols="6"
+          >
+            <v-checkbox
+              label="کردی"
+            />
+          </v-col>
+
+          <v-col
+            cols="6"
+          >
+            <v-checkbox
+              label="ترکی"
+            />
+          </v-col>
+
+           <v-col
+            cols="12"
+          >
+            <v-text-field
+              label="آیا با گویش های دیگری آشنایی دارید؟"
+            />
+          </v-col>
+        </v-row>
+
             
       </v-form>
     </v-container>
