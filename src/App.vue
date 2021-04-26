@@ -552,6 +552,179 @@
           </v-col>
         </v-row>
 
+        <h2>سوابق شغلی</h2>
+        <v-row>
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="عنوان شغلی (اجباری)"
+            />
+          </v-col>
+          
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="نام شرکت (اجباری)"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه ورود (اجباری)"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال ورود (اجباری)"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه خروج (اجباری)"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال خروج (اجباری)"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="علت تغییر (اجباری)"
+            />
+          </v-col>
+
+          <v-divider></v-divider>
+
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="عنوان شغلی"
+            />
+          </v-col>
+          
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="نام شرکت"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه ورود"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال ورود"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه خروج"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال خروج"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="علت تغییر"
+            />
+          </v-col>
+
+          <v-divider></v-divider>
+
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="عنوان شغلی"
+            />
+          </v-col>
+          
+          <v-col
+            cols="6"
+          >
+            <v-text-field 
+              label="نام شرکت"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه ورود"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال ورود"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="ماه خروج"
+              :items="months"
+            />
+          </v-col>
+          <v-col
+            cols="3"
+          >
+            <v-select 
+              label="سال خروج"
+              :items="years"
+            />
+          </v-col>
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="علت تغییر"
+            />
+          </v-col>
+        </v-row>
+        
+
       </v-form>
     </v-container>
 
