@@ -724,6 +724,64 @@
           </v-col>
         </v-row>
         
+        <h2>معرف</h2>
+        <v-row>
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="نام معرف"
+            />
+
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-text-field
+              label="عنوان شغلی"
+            />
+
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-text-field
+              label="محل فعالیت"
+            />
+
+          </v-col>
+
+          <v-divider></v-divider>
+
+          <v-col
+            cols="6"
+          >
+            <v-text-field
+              label="نام معرف"
+            />
+
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-text-field
+              label="عنوان شغلی"
+            />
+
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-text-field
+              label="محل فعالیت"
+            />
+
+          </v-col>
+        </v-row>
 
       </v-form>
     </v-container>
