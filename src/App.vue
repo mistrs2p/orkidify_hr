@@ -825,6 +825,55 @@
           </v-col>
         </v-row>
 
+        <h2>سوالات تکمیلی</h2>
+        <v-row>
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="نحوه آشنایی با ارکید فارمد"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="حقوق پیشنهادی شما (اجباری)"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="سابقه جراحی - بیماری"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="آیا در شرکت های همکار یا رقیب ارکید فارمد کسی را می شناسید؟ اگر بله با ایشان چه نسبتی دارید؟ (اجباری)"
+            />
+          </v-col>
+
+          <v-col
+            cols="12"
+          >
+            <v-text-field 
+              label="توضیحات تکمیلی که لازم می دانید در مورد شما بدانیم"
+            />
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col
+            cols="12"
+          >
+            <div class="submit">ارسال فرم</div>
+          </v-col>
+        </v-row>
       </v-form>
     </v-container>
 
@@ -885,5 +934,17 @@ export default {
     cursor: pointer;
   }
 
+  .submit {
+    background: #74a55f;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px 0px !important;
+    display: block;
+    width: 350px;
+    margin: 100px auto 200px auto !important;
+    cursor: pointer;
+    height: auto !important;
+}
   
 </style>
