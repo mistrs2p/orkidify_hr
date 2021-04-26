@@ -783,6 +783,48 @@
           </v-col>
         </v-row>
 
+        <v-row>
+          <v-col
+            cols="3"
+          >
+            <v-checkbox
+              label="مارکتینگ علمی"
+            />
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-checkbox
+              label="مدیکال انفورماتیک"
+            />
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-checkbox
+              label="فناوری اطلاعات"
+            />
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-checkbox
+              label="پشتیبانی بیماران"
+            />
+          </v-col>
+
+          <v-col
+            cols="3"
+          >
+            <v-checkbox
+              label="منابع انسانی"
+            />
+          </v-col>
+        </v-row>
+
       </v-form>
     </v-container>
 
