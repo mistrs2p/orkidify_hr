@@ -10,51 +10,7 @@
         <Name />
         <InitialInformation :gender="gender" :years="years" :months="months" />
         <MilitaryPlan :military="military" />
-
-        <h2>وضعیت تاهل</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-select 
-              label="وضعیت تاهل"
-              :items="marriage"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-select 
-              label="تحصیلات همسر"
-              :items="majors"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="شغل همسر"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="تعداد فرزندان"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="افراد تحت تکفل"
-            />
-          </v-col>
-        </v-row>
+        <Marriage :marriage="marriage" :majors="majors" />
 
         <h2>اطلاعات تماس</h2>
         <v-row>
@@ -730,6 +686,7 @@ import AddPhoto from './components/AddPhoto'
 import Name from './components/Name'
 import InitialInformation from './components/InitialInformation'
 import MilitaryPlan from './components/MilitaryPlan'
+import Marriage from './components/Marriage'
 export default {
   name: 'App',
 
@@ -739,6 +696,7 @@ export default {
     Name,
     InitialInformation,
     MilitaryPlan,
+    Marriage
   },
 
   data: () => ({
