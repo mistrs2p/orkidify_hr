@@ -6,13 +6,7 @@
     >
       <Header />
       <v-form>
-        <v-row class="addPhoto">
-          <div>
-            <h2>ثبت تصویر</h2>
-          </div>
-          <canvas id="canvas"></canvas>
-
-        </v-row>
+        <AddPhoto />        
 
           <h2>نام شما</h2>
         <v-row>
@@ -870,11 +864,13 @@
 
 <script>
 import Header from './components/Header'
+import AddPhoto from './components/AddPhoto'
 export default {
   name: 'App',
 
   components: {
     Header,
+    AddPhoto,
 
   },
 
