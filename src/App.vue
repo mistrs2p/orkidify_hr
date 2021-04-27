@@ -18,94 +18,12 @@
         <Language />
         <Occupation :years="years" :months="months" />
         <Presenter />
+        <Favorite />
+        <Completion /> 
+
         
-        
 
-        <v-row>
-          <h2>زمینه های کاری مورد علاقه</h2>
-          <v-col
-            cols="3"
-          >
-            <v-checkbox
-              label="مارکتینگ علمی"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-checkbox
-              label="مدیکال انفورماتیک"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-checkbox
-              label="فناوری اطلاعات"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-checkbox
-              label="پشتیبانی بیماران"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-checkbox
-              label="منابع انسانی"
-            />
-          </v-col>
-        </v-row>
-
-        <h2>سوالات تکمیلی</h2>
-        <v-row>
-          <v-col
-            cols="12"
-          >
-            <v-text-field 
-              label="نحوه آشنایی با ارکید فارمد"
-            />
-          </v-col>
-
-          <v-col
-            cols="12"
-          >
-            <v-text-field 
-              label="حقوق پیشنهادی شما (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="12"
-          >
-            <v-text-field 
-              label="سابقه جراحی - بیماری"
-            />
-          </v-col>
-
-          <v-col
-            cols="12"
-          >
-            <v-text-field 
-              label="آیا در شرکت های همکار یا رقیب ارکید فارمد کسی را می شناسید؟ اگر بله با ایشان چه نسبتی دارید؟ (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="12"
-          >
-            <v-text-field 
-              label="توضیحات تکمیلی که لازم می دانید در مورد شما بدانیم"
-            />
-          </v-col>
-        </v-row>
+       
         <v-row>
           <v-col
             cols="12"
@@ -134,6 +52,8 @@ import Accent from './components/Accent'
 import Language from './components/Language'
 import Occupation from './components/Occupation'
 import Presenter from './components/Presenter'
+import Favorite from './components/Favorite'
+import Completion from './components/Completion'
 export default {
   name: 'App',
 
@@ -150,7 +70,9 @@ export default {
     Accent,
     Language,
     Occupation,
-    Presenter
+    Presenter,
+    Favorite,
+    Completion
   },
 
   data: () => ({
