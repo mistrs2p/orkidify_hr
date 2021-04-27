@@ -103,10 +103,10 @@ export default {
     background: linear-gradient(180deg, #f1f5f8 0%, #ffffff 100%);
     /* overflow: hidden; */
     flex-direction: column;
-    margin: auto 4rem;
   }
   
   .row div.twoPart {
+    margin: auto 4rem;
     display: flex;
     flex-wrap: wrap;
   }
