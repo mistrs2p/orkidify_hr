@@ -11,49 +11,8 @@
         <InitialInformation :gender="gender" :years="years" :months="months" />
         <MilitaryPlan :military="military" />
         <Marriage :marriage="marriage" :majors="majors" />
-
-        <h2>اطلاعات تماس</h2>
-        <v-row>
-           <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="تلفن (اجباری)"
-            />
-          </v-col>
-          
-           <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="موبایل"
-            />
-          </v-col>
-
-           <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="ایمیل (اجباری)"
-            />
-          </v-col>
-
-           <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="شهر (اجباری)"
-            />
-          </v-col>
-
-           <v-col
-            cols="12"
-          >
-            <v-text-field
-              label="آدرس (اجباری)"
-            />
-          </v-col>
-        </v-row>
+        <Contact />
+        
 
         <h2>مقطع تحصیلی (لطفا از آخرین مقطع تحصیلی شروع کنید)</h2>
         <v-row>
@@ -687,6 +646,7 @@ import Name from './components/Name'
 import InitialInformation from './components/InitialInformation'
 import MilitaryPlan from './components/MilitaryPlan'
 import Marriage from './components/Marriage'
+import Contact from './components/Contact'
 export default {
   name: 'App',
 
@@ -696,7 +656,8 @@ export default {
     Name,
     InitialInformation,
     MilitaryPlan,
-    Marriage
+    Marriage,
+    Contact
   },
 
   data: () => ({
