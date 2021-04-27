@@ -13,69 +13,9 @@
         <Marriage :marriage="marriage" :majors="majors" />
         <Contact />
         <Majors :majors="majors" :years="years" />
-
-        <h2>Computer Skills</h2>
-        
-        <v-row>
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Word"
-            />
-          </v-col>
-
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Outlook"
-            />
-          </v-col>
-
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Excel"
-            />
-          </v-col>
-
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Medical Search"
-            />
-          </v-col>
-
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Power Point"
-            />
-          </v-col>
-
-          <v-col
-            cols="4"
-          >
-            <v-checkbox
-              label="Fast Typing"
-            />
-          </v-col>
-
-          <v-col
-            cols="12"
-          >
-            <v-text-field
-              label="آیا با مهارت کامپیوتری دیگری آشنایی دارید؟"
-            />
-          </v-col>
-        </v-row>
+        <ComputerSkills />
 
         <h2>آشنایی با لهجه های محلی</h2>
-
         <v-row>
           <v-col
             cols="6"
@@ -516,6 +456,7 @@ import MilitaryPlan from './components/MilitaryPlan'
 import Marriage from './components/Marriage'
 import Contact from './components/Contact'
 import Majors from './components/Majors'
+import ComputerSkills from './components/ComputerSkills'
 export default {
   name: 'App',
 
@@ -527,7 +468,8 @@ export default {
     MilitaryPlan,
     Marriage,
     Contact,
-    Majors
+    Majors,
+    ComputerSkills
   },
 
   data: () => ({
