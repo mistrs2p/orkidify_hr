@@ -8,95 +8,7 @@
       <v-form>
         <AddPhoto />        
         <Name />
-        
-
-        <h2>اطلاعات اولیه</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-select 
-              label="جنسیت (اجباری)"
-              :items="gender"
-            />
-          </v-col>
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="نام پدر (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label=" شماره شناسنامه (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="کد ملی (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-select 
-              label="سال تولد شناسنامه ای (اجباری)"
-              :items="years"
-            />
-          </v-col>
-
-           <v-col
-            cols="6"
-          >
-            <v-select
-              label="ماه تولد (اجباری)"
-              :items="months"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="روز (اجباری))"
-            />
-          </v-col>
-
-                    <v-col
-            cols="3"
-          >
-            <v-select 
-              label="سال تولد حقیقی (اجباری)"
-              :items="years"
-            />
-          </v-col>
-
-           <v-col
-            cols="6"
-          >
-            <v-select
-              label="ماه تولد (اجباری)"
-              :items="months"
-            />
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="روز (اجباری))"
-            />
-          </v-col>
-        </v-row>
-
+        <InitialInformation :gender="gender" :years="years" :months="months" />
         <h2>طرح و سربازی</h2>
         <v-row>
           <v-col
@@ -833,6 +745,7 @@
 import Header from './components/Header'
 import AddPhoto from './components/AddPhoto'
 import Name from './components/Name'
+import InitialInformation from './components/InitialInformation'
 export default {
   name: 'App',
 
@@ -840,6 +753,7 @@ export default {
     Header,
     AddPhoto,
     Name,
+    InitialInformation,
 
   },
 
@@ -876,13 +790,17 @@ export default {
   }
   .row {
     background: linear-gradient(180deg, #f1f5f8 0%, #ffffff 100%);
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-direction: column;
-    /* margin: auto 4rem; */
+    margin: auto 4rem;
   }
   
   .row div.twoPart {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .row div.twoPart * {
+    /* padding: 1rem; */
   }
 
   #canvas {
