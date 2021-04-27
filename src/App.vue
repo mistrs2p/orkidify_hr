@@ -9,24 +9,7 @@
         <AddPhoto />        
         <Name />
         <InitialInformation :gender="gender" :years="years" :months="months" />
-        <h2>طرح و سربازی</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-select 
-              label="وضعیت سربازی"
-              :items="military"
-            />
-          </v-col>
-          <v-col
-            cols="6"
-          >
-            <v-text-field 
-              label="علت معافیت"
-            />
-          </v-col>
-        </v-row>
+        <MilitaryPlan :military="military" />
 
         <h2>وضعیت تاهل</h2>
         <v-row>
@@ -746,6 +729,7 @@ import Header from './components/Header'
 import AddPhoto from './components/AddPhoto'
 import Name from './components/Name'
 import InitialInformation from './components/InitialInformation'
+import MilitaryPlan from './components/MilitaryPlan'
 export default {
   name: 'App',
 
@@ -754,7 +738,7 @@ export default {
     AddPhoto,
     Name,
     InitialInformation,
-
+    MilitaryPlan,
   },
 
   data: () => ({
@@ -799,9 +783,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
-  .row div.twoPart * {
-    /* padding: 1rem; */
-  }
+  /* .row div.twoPart * {
+    padding: 1rem;
+  } */
 
   #canvas {
     border-radius: 15px;
