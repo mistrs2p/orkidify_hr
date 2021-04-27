@@ -17,67 +17,12 @@
         <Accent />
         <Language />
         <Occupation :years="years" :months="months" />
+        <Presenter />
         
-        <h2>معرف</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="نام معرف"
-            />
-
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="عنوان شغلی"
-            />
-
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="محل فعالیت"
-            />
-
-          </v-col>
-
-          <v-divider></v-divider>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="نام معرف"
-            />
-
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="عنوان شغلی"
-            />
-
-          </v-col>
-
-          <v-col
-            cols="3"
-          >
-            <v-text-field
-              label="محل فعالیت"
-            />
-
-          </v-col>
-        </v-row>
+        
 
         <v-row>
+          <h2>زمینه های کاری مورد علاقه</h2>
           <v-col
             cols="3"
           >
@@ -188,6 +133,7 @@ import ComputerSkills from './components/ComputerSkills'
 import Accent from './components/Accent'
 import Language from './components/Language'
 import Occupation from './components/Occupation'
+import Presenter from './components/Presenter'
 export default {
   name: 'App',
 
@@ -203,7 +149,8 @@ export default {
     ComputerSkills,
     Accent,
     Language,
-    Occupation
+    Occupation,
+    Presenter
   },
 
   data: () => ({
