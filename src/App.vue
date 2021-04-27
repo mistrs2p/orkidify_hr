@@ -4,20 +4,7 @@
       fluid
       class="topImg"
     >
-      <v-row>
-        <v-col>
-          <v-img
-            min-height="416"
-            src="./assets/Img/Header_small.png"
-
-          >
-          </v-img>
-          <h1
-            class="text-center"  
-          >به ارکید فارمد خوش آمدید</h1>
-          <p class="welcomeText text-center">لطفا اطلاعات فرم زیر را با دقت تکمیل نمایید</p>
-        </v-col>
-      </v-row>
+      <Header />
       <v-form>
         <v-row class="addPhoto">
           <div>
@@ -876,16 +863,19 @@
         </v-row>
       </v-form>
     </v-container>
-
   </v-app>
 </template>
 
-<script>
 
+
+<script>
+import Header from './components/Header'
 export default {
   name: 'App',
 
   components: {
+    Header,
+
   },
 
   data: () => ({
