@@ -19,18 +19,8 @@
         <Occupation :years="years" :months="months" />
         <Presenter />
         <Favorite />
-        <Completion /> 
-
-        
-
-       
-        <v-row>
-          <v-col
-            cols="12"
-          >
-            <div class="submit">ارسال فرم</div>
-          </v-col>
-        </v-row>
+        <Completion :introduction="introduction" />
+        <SendBotton />
       </v-form>
     </v-container>
   </v-app>
@@ -54,6 +44,7 @@ import Occupation from './components/Occupation'
 import Presenter from './components/Presenter'
 import Favorite from './components/Favorite'
 import Completion from './components/Completion'
+import SendBotton from './components/SendBotton'
 export default {
   name: 'App',
 
@@ -72,7 +63,8 @@ export default {
     Occupation,
     Presenter,
     Favorite,
-    Completion
+    Completion,
+    SendBotton
   },
 
   data: () => ({
@@ -81,7 +73,8 @@ export default {
     months: ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'],
     military: ['معافیت پزشکی','معافیت سایر','پایان طرح خدمت','در حال اتمام','در حال گذراندن','هنوز شروع نشده'],
     marriage: ['متاهل','مطلقه','مجرد'],
-    majors: ['متخصص و PHD','دکترا حرفه ای','کارشناسی ارشد','کارشناسی','فوق دبپلم','دیپلم','سایر']
+    majors: ['متخصص و PHD','دکترا حرفه ای','کارشناسی ارشد','کارشناسی','فوق دبپلم','دیپلم','سایر'],
+    introduction: ['Linkedin Ads', 'IranTallent Ads', 'Congresses', 'Introduced By Someone', 'Heard about in the Business', 'University departments & Forums', 'Other']
   }),
 };
 </script>

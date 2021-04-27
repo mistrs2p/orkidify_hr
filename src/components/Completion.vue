@@ -7,8 +7,9 @@
             <v-col
             cols="12"
             >
-            <v-text-field 
+            <v-select 
                 label="نحوه آشنایی با ارکید فارمد"
+                :items="introduction"
             />
             </v-col>
 
@@ -49,7 +50,7 @@
 
 <script>
 export default {
-
+    props: ['introduction']
 }
 </script>
 
