@@ -7,41 +7,8 @@
       <Header />
       <v-form>
         <AddPhoto />        
-
-          <h2>نام شما</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="نام (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="Name (اجباری)"
-            />
-          </v-col>
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="نام خانوادگی (اجباری)"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-text-field
-              label="family (اجباری)"
-            />
-          </v-col>
-
-        </v-row>
+        <Name />
+        
 
         <h2>اطلاعات اولیه</h2>
         <v-row>
@@ -865,12 +832,14 @@
 <script>
 import Header from './components/Header'
 import AddPhoto from './components/AddPhoto'
+import Name from './components/Name'
 export default {
   name: 'App',
 
   components: {
     Header,
     AddPhoto,
+    Name,
 
   },
 
@@ -908,6 +877,12 @@ export default {
   .row {
     background: linear-gradient(180deg, #f1f5f8 0%, #ffffff 100%);
     overflow: hidden;
+    flex-direction: column;
+    /* margin: auto 4rem; */
+  }
+  
+  .row div.twoPart {
+    display: flex;
   }
 
   #canvas {
