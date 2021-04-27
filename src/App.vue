@@ -14,34 +14,7 @@
         <Contact />
         <Majors :majors="majors" :years="years" />
         <ComputerSkills />
-
-        <h2>آشنایی با لهجه های محلی</h2>
-        <v-row>
-          <v-col
-            cols="6"
-          >
-            <v-checkbox
-              label="کردی"
-            />
-          </v-col>
-
-          <v-col
-            cols="6"
-          >
-            <v-checkbox
-              label="ترکی"
-            />
-          </v-col>
-
-           <v-col
-            cols="12"
-          >
-            <v-text-field
-              label="آیا با گویش های دیگری آشنایی دارید؟"
-            />
-          </v-col>
-        </v-row>
-
+        <Accent />
 
         <h2>زبان های خارجی</h2>
         <v-row>
@@ -457,6 +430,7 @@ import Marriage from './components/Marriage'
 import Contact from './components/Contact'
 import Majors from './components/Majors'
 import ComputerSkills from './components/ComputerSkills'
+import Accent from './components/Accent'
 export default {
   name: 'App',
 
@@ -469,7 +443,8 @@ export default {
     Marriage,
     Contact,
     Majors,
-    ComputerSkills
+    ComputerSkills,
+    Accent
   },
 
   data: () => ({
