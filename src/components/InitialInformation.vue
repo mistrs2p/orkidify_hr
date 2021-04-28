@@ -9,6 +9,7 @@
             cols="6"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="جنسیت (اجباری)"
                 :items="gender"
             />
@@ -17,6 +18,7 @@
                 cols="6"
             >
                 <v-text-field
+                    :rules="[rules.required]"
                     label="نام پدر (اجباری)"
                 />
             </v-col>
@@ -25,6 +27,7 @@
                 cols="6"
             >
                 <v-text-field
+                    :rules="[rules.required]"
                     label=" شماره شناسنامه (اجباری)"
                 />
             </v-col>
@@ -33,6 +36,7 @@
                 cols="6"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="کد ملی (اجباری)"
             />
             </v-col>
@@ -41,6 +45,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="سال تولد شناسنامه ای (اجباری)"
                 :items="years"
             />
@@ -50,6 +55,7 @@
             cols="6"
             >
             <v-select
+                :rules="[rules.required]"
                 label="ماه تولد (اجباری)"
                 :items="months"
             />
@@ -59,6 +65,7 @@
             cols="3"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="روز (اجباری))"
             />
             </v-col>
@@ -67,6 +74,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="سال تولد حقیقی (اجباری)"
                 :items="years"
             />
@@ -76,6 +84,7 @@
             cols="6"
             >
             <v-select
+                :rules="[rules.required]"
                 label="ماه تولد (اجباری)"
                 :items="months"
             />
@@ -85,6 +94,7 @@
             cols="3"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="روز (اجباری))"
             />
             </v-col>
@@ -94,7 +104,7 @@
 
 <script>
 export default {
-    props: ['gender', 'years', 'months']
+    props: ['gender', 'years', 'months', 'rules']
 }
 </script>
 

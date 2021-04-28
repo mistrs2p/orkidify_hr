@@ -8,7 +8,8 @@
                         cols="6"
                     >
                     <v-text-field
-                    label="رشته تحصیلی (اجباری)"
+                        :rules="[rules.required]"
+                        label="رشته تحصیلی (اجباری)"
                     />
                 </v-col>
                 
@@ -16,8 +17,9 @@
                     cols="6"
                 >
                     <v-select
-                    label="مقطع تحصیلی (اجباری)"
-                    :items="majors"
+                        :rules="[rules.required]"
+                        label="مقطع تحصیلی (اجباری)"
+                        :items="majors"
                     />
                 </v-col>
 
@@ -25,7 +27,8 @@
                     cols="6"
                 >
                     <v-text-field
-                    label="نام دانشگاه (اجباری)"
+                        :rules="[rules.required]"
+                        label="نام دانشگاه (اجباری)"
                     />
                 </v-col>
 
@@ -33,8 +36,9 @@
                     cols="3"
                 >
                     <v-select
-                    label="سال ورود (اجباری)"
-                    :items="years"
+                        :rules="[rules.required]"
+                        label="سال ورود (اجباری)"
+                        :items="years"
                     />
                 </v-col>
 
@@ -42,8 +46,9 @@
                     cols="3"
                 >
                     <v-select
-                    label="سال خروج (اجباری)"
-                    :items="years"
+                        :rules="[rules.required]"
+                        label="سال خروج (اجباری)"
+                        :items="years"
                     />
                 </v-col>
                 <v-divider />
@@ -138,7 +143,7 @@
 
 <script>
 export default {
- props: ['majors', 'years']
+ props: ['majors', 'years', 'rules']
 }
 </script>
 

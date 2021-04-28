@@ -7,18 +7,18 @@
       <v-form>
         <AddPhoto />        
         <Name :rules="rules" />
-        <InitialInformation :gender="gender" :years="years" :months="months" />
+        <InitialInformation :rules="rules" :gender="gender" :years="years" :months="months" />
         <MilitaryPlan :military="military" />
-        <Marriage :marriage="marriage" :majors="majors" />
-        <Contact />
-        <Majors :majors="majors" :years="years" />
+        <Marriage :rules="rules" :marriage="marriage" :majors="majors" />
+        <Contact :rules="rules" />
+        <Majors :rules="rules" :majors="majors" :years="years" />
         <ComputerSkills />
         <Accent />
         <Language />
-        <Occupation :years="years" :months="months" />
+        <Occupation :rules="rules" :years="years" :months="months" />
         <Presenter />
         <Favorite />
-        <Completion :introduction="introduction" />
+        <Completion :rules="rules" :introduction="introduction" />
         <SendBotton />
       </v-form>
     </v-container>

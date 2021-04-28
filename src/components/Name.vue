@@ -17,6 +17,7 @@
             cols="6"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="Name (اجباری)"
             />
             </v-col>
@@ -24,6 +25,7 @@
             cols="6"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="نام خانوادگی (اجباری)"
             />
             </v-col>
@@ -32,6 +34,7 @@
             cols="6"
             >
             <v-text-field
+                :rules="[rules.required]"
                 label="family (اجباری)"
             />
             </v-col>

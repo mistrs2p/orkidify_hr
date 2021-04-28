@@ -8,6 +8,7 @@
         cols="6"
       >
         <v-text-field
+          :rules="[rules.required]"
           label="تلفن (اجباری)"
         />
       </v-col>
@@ -16,6 +17,7 @@
         cols="6"
       >
         <v-text-field
+          :rules="[rules.required]"
           label="موبایل"
         />
       </v-col>
@@ -24,6 +26,7 @@
         cols="6"
       >
         <v-text-field
+          :rules="[rules.required]"
           label="ایمیل (اجباری)"
         />
       </v-col>
@@ -32,6 +35,7 @@
         cols="6"
       >
         <v-text-field
+          :rules="[rules.required]"
           label="شهر (اجباری)"
         />
       </v-col>
@@ -40,6 +44,7 @@
         cols="12"
       >
         <v-text-field
+          :rules="[rules.required]"
           label="آدرس (اجباری)"
         />
       </v-col>
@@ -49,7 +54,7 @@
 
 <script>
 export default {
-
+  props: ['rules']
 }
 </script>
 

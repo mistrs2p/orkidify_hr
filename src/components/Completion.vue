@@ -17,6 +17,7 @@
             cols="12"
             >
             <v-text-field 
+                :rules="[rules.required]"
                 label="حقوق پیشنهادی شما (اجباری)"
             />
             </v-col>
@@ -33,6 +34,7 @@
             cols="12"
             >
             <v-text-field 
+                :rules="[rules.required]"
                 label="آیا در شرکت های همکار یا رقیب ارکید فارمد کسی را می شناسید؟ اگر بله با ایشان چه نسبتی دارید؟ (اجباری)"
             />
             </v-col>
@@ -50,7 +52,7 @@
 
 <script>
 export default {
-    props: ['introduction']
+    props: ['introduction', 'rules']
 }
 </script>
 

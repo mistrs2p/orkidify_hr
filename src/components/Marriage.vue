@@ -8,6 +8,7 @@
                     cols="6"
                 >
                 <v-select 
+                    :rules="[rules.required]"
                     label="وضعیت تاهل"
                     :items="marriage"
                 />
@@ -51,7 +52,7 @@
 
 <script>
 export default {
-    props: ['marriage', 'majors']
+    props: ['marriage', 'majors', 'rules']
 }
 </script>
 

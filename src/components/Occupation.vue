@@ -8,6 +8,7 @@
             cols="6"
             >
             <v-text-field 
+                :rules="[rules.required]"
                 label="عنوان شغلی (اجباری)"
             />
             </v-col>
@@ -16,6 +17,7 @@
             cols="6"
             >
             <v-text-field 
+                :rules="[rules.required]"
                 label="نام شرکت (اجباری)"
             />
             </v-col>
@@ -23,6 +25,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="ماه ورود (اجباری)"
                 :items="months"
             />
@@ -31,6 +34,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="سال ورود (اجباری)"
                 :items="years"
             />
@@ -39,6 +43,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="ماه خروج (اجباری)"
                 :items="months"
             />
@@ -47,6 +52,7 @@
             cols="3"
             >
             <v-select 
+                :rules="[rules.required]"
                 label="سال خروج (اجباری)"
                 :items="years"
             />
@@ -55,6 +61,7 @@
             cols="12"
             >
             <v-text-field 
+                :rules="[rules.required]"
                 label="علت تغییر (اجباری)"
             />
             </v-col>
@@ -178,7 +185,7 @@
 
 <script>
 export default {
-    props: ['years', 'months']
+    props: ['years', 'months', 'rules']
 }
 </script>
 
