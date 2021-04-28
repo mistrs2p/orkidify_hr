@@ -2,7 +2,6 @@
   <v-app>
     <v-container
       fluid
-      class="topImg"
     >
       <Header />
       <v-form>
@@ -74,17 +73,24 @@ export default {
     military: ['معافیت پزشکی','معافیت سایر','پایان طرح خدمت','در حال اتمام','در حال گذراندن','هنوز شروع نشده'],
     marriage: ['متاهل','مطلقه','مجرد'],
     majors: ['متخصص و PHD','دکترا حرفه ای','کارشناسی ارشد','کارشناسی','فوق دبپلم','دیپلم','سایر'],
-    introduction: ['Linkedin Ads', 'IranTallent Ads', 'Congresses', 'Introduced By Someone', 'Heard about in the Business', 'University departments & Forums', 'Other']
+    introduction: ['Linkedin Ads', 'IranTallent Ads', 'Congresses', 'Introduced By Someone', 'Heard about in the Business', 'University departments & Forums', 'Other'],
+    rules: {
+        required: value => !!value || 'فیلد اجباری'
+    }
   }),
 };
 </script>
 
 <style>
   @import './assets/style/fontface.css';
-  .topImg * {
+  .container {
     padding: 0;
     margin: 0
   }
+  .container > .row {
+    padding: 0;
+  }
+
   h1 {
     color: #004b70;
     font-size: 25px;
@@ -103,6 +109,7 @@ export default {
     background: linear-gradient(180deg, #f1f5f8 0%, #ffffff 100%);
     /* overflow: hidden; */
     flex-direction: column;
+    padding: 20px 10%;
   }
   
   .row div.twoPart {
@@ -136,5 +143,5 @@ export default {
     cursor: pointer;
     height: auto !important;
 }
-  
+
 </style>
