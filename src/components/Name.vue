@@ -8,7 +8,6 @@
             cols="6"
             >
             <v-text-field
-                required
                 :rules="[rules.required]"
                 label="نام (اجباری)"
             />
@@ -18,7 +17,6 @@
             cols="6"
             >
             <v-text-field
-                required
                 label="Name (اجباری)"
             />
             </v-col>
@@ -26,7 +24,6 @@
             cols="6"
             >
             <v-text-field
-                required
                 label="نام خانوادگی (اجباری)"
             />
             </v-col>
@@ -35,7 +32,6 @@
             cols="6"
             >
             <v-text-field
-                required
                 label="family (اجباری)"
             />
             </v-col>
@@ -45,6 +41,7 @@
 
 <script>
 export default {
+    props: ['rules']
 }
 </script>
 

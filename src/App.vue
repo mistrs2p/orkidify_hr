@@ -6,7 +6,7 @@
       <Header />
       <v-form>
         <AddPhoto />        
-        <Name />
+        <Name :rules="rules" />
         <InitialInformation :gender="gender" :years="years" :months="months" />
         <MilitaryPlan :military="military" />
         <Marriage :marriage="marriage" :majors="majors" />
